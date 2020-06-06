@@ -20,7 +20,7 @@ img{
 	width: 100%;
 }
 .container {
-    max-width:1140px ;
+    max-width: calc(1140px + 30px);
     margin-right: auto;
     margin-left: auto;
 }
@@ -34,18 +34,13 @@ nav.navbar {
 .head_wrapper .container{
     max-width: 1440px;
 }   
-p.text{
+span.text{
     color: #273238;
     font-family: 'SourceSansPro', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.6px;
     line-height: 25px;
-    margin: 0 auto;
-    text-align: justify;
-}
-.button_wrap{
- float: right;
 }
 h4.title{
     color: #273238;
@@ -65,35 +60,39 @@ h4.title{
     margin: 0 auto;
 }
 .terms_wrapper{
+    float: left;
     width: 100%;
 }
 .terms_menu_wrap{
     margin-bottom:39px;
+    text-align: justify;
 }
 .scroll_box_wrapper{
     width: 100%;
+    float: left;
     margin-bottom: 20px;
 }
 .scroll_box_wrapper .box_content ul {
     list-style-type: decimal;
 }
-.box_content li{
+.scroll_box_wrapper .inner_list ul li{
     color: #273238;
     font-family: 'SourceSansPro', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    line-height: 25px;
+    line-height: 24px;
+    padding: 0 0 30px;
     margin-bottom: 20px;
-    padding-left: 16px;
+    padding-left: 12px;
 }
 .scroll_box_wrapper .box_content {
     background-color: #F6F6F6;
     border: 1px solid #979797;
     border-radius: 4px;
-    max-width: 853px;
-    max-height: 285px;
-    padding:34px 30px 40px;
+    width: 853px;
+    height: 285px;
+    padding:30px 30px 10px 37px;
     overflow: scroll;
     margin: 0 auto;
 }
@@ -112,7 +111,11 @@ h4.title{
 ::-webkit-scrollbar-thumb:hover {
     background: #D8D8D8;  
 }
-.bottom_wrapper .text_box{
+.bottom_wrapper .text_wrap{
+    max-width: 853px;
+    margin: 0 auto;
+}
+.text_wrap .text_box{
     margin-bottom: 18px;
 }
 .text_box span{ 
@@ -126,11 +129,10 @@ h4.title{
     text-align: left; 
     margin: 0 auto;
 }
-.bottom_wrapper  {
-    margin: 0 auto;
+.bottom_wrapper {
     width: 100%;
+    float: left;
 }
-
 a{
     font-family: 'SourceSansPro', sans-serif;
     font-size: 14px;
@@ -195,6 +197,10 @@ h4.modal-title{
      border: none;
      justify-content: center;
      padding-bottom: 58px;
+ }
+.text_wrap .button_wrapper{
+    float: right;
+    margin-bottom: 76px;
  }
  
 @media(min-width: 768px) and (max-width: 1024px){
