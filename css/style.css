@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+html,
 body {
 	background-color: #FFFFFF;
 	margin-right: auto;
@@ -178,7 +179,7 @@ h4.modal-title{
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.3px;
-    line-height: 27.65px;
+    line-height: 28px;
 }
 .modal-header{
     text-align: center;
@@ -199,7 +200,7 @@ h4.modal-title{
      padding-bottom: 58px;
  }
 .text_wrap .button_wrapper{
-    float: right;
+    text-align: right;
     margin-bottom: 76px;
  }
  
@@ -211,7 +212,10 @@ h4.modal-title{
     .head_wrapper{
         border-top: 6px solid #41B9B4;
     }  
-    p.text{
+    .terms_container {
+        max-width: 75%;
+    }
+    span.text{
         font-size: 14px;
         line-height: 24px;
     }
@@ -234,12 +238,36 @@ h4.modal-title{
     }
     .scroll_box_wrapper .box_content {
         padding:16px 20px 0 30px;
+        width:76%;
+    }
+    .scroll_box_wrapper .inner_list ul li {
+        font-size: 14px;
+        line-height: 23px;
+        margin-bottom: 18px;
+        padding-left: 18px;
     }
     .text_box span {
         font-size: 14px;
         line-height: 20px;
         text-align: center;
     }
+    .bottom_wrapper .text_wrap {
+        max-width: 76%;
+    }
+    .text_wrap .button_wrapper {
+        margin-bottom: 60px;
+    }
+    .modal-header {
+        padding: 50px 20px 40px;
+    }
+    .modal-footer {
+        padding-bottom: 50px;
+    }
+    h4.modal-title {
+        font-size: 21px;
+        line-height: 26px;
+    }
+    
  }
 
 
@@ -253,9 +281,9 @@ h4.modal-title{
     .head_wrapper{
         border-top: 6px solid #41B9B4;
     }
-    p.text{
-        font-size: 12px;
-        line-height: 22px;
+    span.text{
+        font-size: 13px;
+        line-height: 18px;
     }
     h4.title{
         font-size: 18px;
@@ -267,7 +295,11 @@ h4.modal-title{
     .bottom_wrapper .title_text{
         margin-bottom: 10px;
     }
+    .terms_container {
+        max-width: 87%;
+    }
     .text_box span{ 
+        max-width: 90%;
         font-size: 13px;
         line-height: 18px;
         text-align: center;
@@ -277,14 +309,30 @@ h4.modal-title{
     }
     .scroll_box_wrapper .box_content {
         padding:10px 18px 0 20px;
+        max-width: 95%;
     }
-    .box_content li {
-        font-size: 13px;
+    .scroll_box_wrapper .inner_list ul li {
+        font-size: 12px;
         line-height: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        padding-left: 10px;
     }
     .terms_menu_wrap {
         margin-bottom: 20px;
+    }
+    .text_wrap .button_wrapper {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .modal-header {
+        padding: 30px 10px 20px;
+    }
+    .modal-footer {
+        padding-bottom: 20px;
+    }
+    h4.modal-title {
+        font-size: 18px;
+        line-height: 24px;
     }
 
 }
