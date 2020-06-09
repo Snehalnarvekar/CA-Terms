@@ -21,13 +21,19 @@ img{
 	width: 100%;
 }
 .container {
-    max-width: calc(1140px + 30px);
+    max-width: calc(1140px + 20px);
     margin-right: auto;
     margin-left: auto;
 }
 nav.navbar {
-    padding: 10px 0 20px 0;
-    margin-bottom: 30px;
+    padding: 10px 0 50px 0;
+}
+a.navbar-brand img{
+    max-width: 60px;
+    max-height: 44px;
+}
+.navbar-light .navbar-brand {
+    margin-right: 0;
 }
 .head_wrapper{
     border-top: 8px solid #41B9B4;
@@ -37,19 +43,20 @@ nav.navbar {
 }   
 span.text{
     color: #273238;
-    font-family: 'SourceSansPro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.6px;
     line-height: 25px;
+    text-align: left;
 }
 h4.title{
     color: #273238;
-    font-family: 'SourceSansPro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: -0.3px;
-    line-height: 28px;
+    line-height: 27.65px;
     text-align: center;
 }
 .title_wrapper h4.title{
@@ -66,7 +73,6 @@ h4.title{
 }
 .terms_menu_wrap{
     margin-bottom:39px;
-    text-align: justify;
 }
 .scroll_box_wrapper{
     width: 100%;
@@ -78,14 +84,13 @@ h4.title{
 }
 .scroll_box_wrapper .inner_list ul li{
     color: #273238;
-    font-family: 'SourceSansPro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    line-height: 24px;
-    padding: 0 0 30px;
-    margin-bottom: 20px;
-    padding-left: 12px;
+    line-height: 25px;
+    margin-bottom: 23px;
+    padding-left: 10px;
 }
 .scroll_box_wrapper .box_content {
     background-color: #F6F6F6;
@@ -93,13 +98,13 @@ h4.title{
     border-radius: 4px;
     width: 853px;
     height: 285px;
-    padding:30px 30px 10px 37px;
+    padding:35px 62px 23px 46px;
     overflow: scroll;
     margin: 0 auto;
 }
 ::-webkit-scrollbar {
     width: 12px;
-    height: 12px;
+    height: 0;
 }    
 ::-webkit-scrollbar-track {
     background-color:#F6F6F6 ;
@@ -117,11 +122,11 @@ h4.title{
     margin: 0 auto;
 }
 .text_wrap .text_box{
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 .text_box span{ 
     color: #B9BBBB;
-    font-family: 'SourceSansPro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: -0.6px;
@@ -135,9 +140,9 @@ h4.title{
     float: left;
 }
 a{
-    font-family: 'SourceSansPro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: -0.56px;
     line-height: 17.6px;
     text-align: center;
@@ -147,14 +152,14 @@ a{
     background-color: #FFFFFF;
     border: 1px solid #E5E6E6;
     border-radius: 4px;
-    padding: 6px 28px;
-    margin-right: 12px;
+    padding: 5px 26px;
+    margin-right: 8px;
 }
 .btn-primary{
     color: #FFFFFF;
     background-color: #3B9BE4;
     border-radius: 4px;
-    padding: 8px 40px;
+    padding: 6px 45px;
     border: 0;
     outline: none;
 }
@@ -170,28 +175,33 @@ a{
 .btn-white:focus,
 .btn-white:active{
 	background-color: #FFFFFF;
-    border-color: #E5E6E6;
+    border-color: #3B9BE4;
     color: #FF6161;
 	box-shadow: 1px 1px 5px 0 rgb(209, 212, 212);
 	transition: 0.3s all ease-in-out;
 }
 h4.modal-title{
+    color: #273238;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 22px;
     font-weight: 700;
+    line-height: 27.65px;
     letter-spacing: -0.3px;
-    line-height: 28px;
+    text-align: center;
 }
 .modal-header{
     text-align: center;
     justify-content: center;
     border: none;
-    padding:64px 30px 46px ;
+    padding:64px 30px 28px ;
 }
- .model-content{
-    max-width: 485px;
+ .modal-content{
+     position: relative;
+    max-width: 480px;
     max-height: 228px;
     background-color: #FFFFFF;
     border-radius: 9px;
+    float: right;
     box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.18);
  }
 .modal-footer{
@@ -199,24 +209,30 @@ h4.modal-title{
      justify-content: center;
      padding-bottom: 58px;
  }
+ .modal.show{
+     padding-right: 0;
+ }
 .text_wrap .button_wrapper{
     text-align: right;
     margin-bottom: 76px;
  }
+ .modal.show .modal-dialog {
+    justify-content: center;
+}
+
  
 @media(min-width: 768px) and (max-width: 1024px){
     nav.navbar {
-        padding: 10px 0 18px 0;
-        margin-bottom: 20px;
+        padding: 10px 0 38px 0;
     }
     .head_wrapper{
         border-top: 6px solid #41B9B4;
     }  
     .terms_container {
-        max-width: 75%;
+        max-width: 80%;
     }
     span.text{
-        font-size: 14px;
+        font-size: 15px;
         line-height: 24px;
     }
     h4.title{
@@ -234,31 +250,36 @@ h4.modal-title{
         margin-bottom: 16px;
     }
     .bottom_wrapper .text_box {
-        margin-bottom: 16px;
+        margin-bottom: 14px;
     }
     .scroll_box_wrapper .box_content {
-        padding:16px 20px 0 30px;
-        width:76%;
+        padding: 30px 50px 10px 32px;
+        width:82%;
+        height:260px;
     }
     .scroll_box_wrapper .inner_list ul li {
-        font-size: 14px;
-        line-height: 23px;
-        margin-bottom: 18px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 20px;
         padding-left: 18px;
     }
     .text_box span {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 15px;
+        line-height:20px;
         text-align: center;
     }
     .bottom_wrapper .text_wrap {
-        max-width: 76%;
+        max-width: 82%;
     }
     .text_wrap .button_wrapper {
         margin-bottom: 60px;
     }
+    .modal-content {
+        max-width: 430px;
+        max-height: 200px;
+    }
     .modal-header {
-        padding: 50px 20px 40px;
+        padding: 50px 24px 20px;
     }
     .modal-footer {
         padding-bottom: 50px;
@@ -269,21 +290,17 @@ h4.modal-title{
     }
     
  }
-
-
-
-
  @media (max-width: 767px){
     nav.navbar {
-        padding: 10px 0 10px 0;
-        margin-bottom: 20px;
+        padding: 10px 0 18px 0;
     }
     .head_wrapper{
         border-top: 6px solid #41B9B4;
     }
     span.text{
-        font-size: 13px;
+        font-size: 14px;
         line-height: 18px;
+        letter-spacing: -0.4px;
     }
     h4.title{
         font-size: 18px;
@@ -296,45 +313,60 @@ h4.modal-title{
         margin-bottom: 10px;
     }
     .terms_container {
-        max-width: 87%;
+        max-width: 92%;
     }
     .text_box span{ 
         max-width: 90%;
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 16px;
         text-align: center;
     }
     .bottom_wrapper .text_box {
         margin-bottom: 10px;
     }
     .scroll_box_wrapper .box_content {
-        padding:10px 18px 0 20px;
-        max-width: 95%;
+        padding:18px 10px 10px 20px;
+        width: 100%;
     }
     .scroll_box_wrapper .inner_list ul li {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 14px;
+        line-height: 18px;
         margin-bottom: 10px;
-        padding-left: 10px;
+        padding-left: 6px;
     }
     .terms_menu_wrap {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-    .text_wrap .button_wrapper {
-        text-align: center;
+    .text_wrap .button_wrapper {    
         margin-bottom: 40px;
     }
     .modal-header {
-        padding: 30px 10px 20px;
+        padding: 20px 10px 10px;
     }
     .modal-footer {
-        padding-bottom: 20px;
+        padding-bottom: 24px;
     }
     h4.modal-title {
         font-size: 18px;
         line-height: 24px;
     }
-
+    .bottom_wrapper .text_wrap {
+        width: 94%;
+    }
+    .modal-content {
+        max-width: 86%;
+        max-height: 80%;
+    }
+    .modal-footer .btn-white {
+        padding: 5px 14px;
+    }
+    .modal-footer .btn-primary {
+        padding: 6px 32px;
+    }
+    a.navbar-brand img {
+        max-width: 50px;
+        max-height: 30px
+    }
 }
 
 
